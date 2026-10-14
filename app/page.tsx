@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ContactForm } from '@/components/ContactForm';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: "ConsultingGrowth360 — Build a Practice That Moves Forward",
@@ -370,8 +370,29 @@ export default function Page() {
     </div>
     <div className="contact-panel">
       <h3>Let's talk about your growth.</h3>
-      <p className="copy">Tell us a little about your consulting practice. This opens an email draft you can send.</p>
-      <ContactForm />
+      <p className="copy">Tell us a little about your consulting practice.</p>
+      <div style={{ width: "100%", height: 485, marginTop: 28 }}>
+        <iframe
+          src="https://links.360growthlab.com/widget/form/d8TdNMOCsDXSOvzRbTos"
+          style={{ width: "100%", height: "100%", border: "none", borderRadius: 8 }}
+          id="inline-d8TdNMOCsDXSOvzRbTos"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Prepare My Inquiry Rehman Ali Form "
+          data-height="485"
+          data-layout-iframe-id="inline-d8TdNMOCsDXSOvzRbTos"
+          data-form-id="d8TdNMOCsDXSOvzRbTos"
+          data-cookie-consent="true"
+          data-cookie-consent-provider="auto"
+          title="Prepare My Inquiry Rehman Ali Form "
+        />
+      </div>
+      <Script src="https://links.360growthlab.com/js/form_embed.js" strategy="lazyOnload" />
     </div>
   </section>
 </main>
