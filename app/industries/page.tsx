@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Who We Help — ConsultingGrowth360",
-  description: "Growth systems for business, marketing, healthcare, finance, technology, and education consultants across the United States.",
-};
-
 export default function Page() {
   return (
     <>

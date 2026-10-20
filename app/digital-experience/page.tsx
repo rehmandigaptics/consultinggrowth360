@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Web & Digital Experience — ConsultingGrowth360",
-  description: "Premium, conversion-minded websites for consultants. Structure, narrative, and a clear path from attention to a serious conversation.",
-};
-
 export default function Page() {
   return (
     <>

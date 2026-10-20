@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Our Approach — ConsultingGrowth360",
-  description: "Discover, Design, Activate, Optimize — a practical method for building a connected consulting practice.",
-};
-
 export default function Page() {
   return (
     <>

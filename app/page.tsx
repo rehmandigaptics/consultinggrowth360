@@ -1,10 +1,4 @@
-import type { Metadata } from 'next';
 import Script from 'next/script';
-
-export const metadata: Metadata = {
-  title: "ConsultingGrowth360 — Build a Practice That Moves Forward",
-  description: "Premium growth systems, brand strategy, lead generation, and automation for independent consultants and consulting firms across the United States.",
-};
 
 export default function Page() {
   return (

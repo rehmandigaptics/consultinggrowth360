@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "CRM & Automation — ConsultingGrowth360",
-  description: "Pipelines, follow-up, and connected tools for consultants so good opportunities are not left to memory.",
-};
-
 export default function Page() {
   return (
     <>

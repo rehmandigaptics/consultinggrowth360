@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "n8n Automation — ConsultingGrowth360",
-  description: "Custom n8n automation for consulting practices: workflows that connect your CRM, forms, calendars, and tools without brittle manual work.",
-};
-
 export default function Page() {
   return (
     <>

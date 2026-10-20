@@ -84,7 +84,20 @@ export function SiteFooter() {
 
         <div className="footer-bottom">
           <span>© 2026 ConsultingGrowth360. All rights reserved.</span>
-          <span>Designed for expertise. Built for momentum.</span>
+          <a
+            className="footer-powered"
+            href="https://360growthlab.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by
+            <img
+              src="/assets/images/brand/360growthlab.png"
+              alt="360 Growth Lab"
+              width={120}
+              height={32}
+            />
+          </a>
         </div>
       </div>
     </footer>

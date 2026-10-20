@@ -1620,8 +1620,22 @@ body.menu-lock { overflow: hidden; }
   letter-spacing: .03em;
   color: rgba(255, 255, 255, .4);
 }
-.footer-bottom span:last-child {
-  color: rgba(215, 238, 158, .45);
+.footer-powered {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, .45);
+  text-decoration: none;
+  transition: color .2s ease, opacity .2s ease;
+}
+.footer-powered img {
+  display: block;
+  height: 22px;
+  width: auto;
+}
+.footer-powered:hover {
+  color: rgba(215, 238, 158, .85);
+  opacity: .95;
 }
 
 #backTop {

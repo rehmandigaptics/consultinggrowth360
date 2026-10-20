@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { Instrument_Serif, Outfit } from "next/font/google";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./site.css";
@@ -22,15 +22,6 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument",
   display: "swap",
 });
-
-export const metadata: Metadata = {
-  title: {
-    default: "ConsultingGrowth360 — Build a Practice That Moves Forward",
-    template: "%s",
-  },
-  description:
-    "Premium growth systems, brand strategy, lead generation, and automation for independent consultants and consulting firms across the United States.",
-};
 
 export const viewport: Viewport = {
   themeColor: "#0b1420",

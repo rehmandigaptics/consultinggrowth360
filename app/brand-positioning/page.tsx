@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Brand & Positioning — ConsultingGrowth360",
-  description: "Positioning for consultants who are tired of sounding interchangeable. Narrative, offer architecture, and a message system the market can repeat.",
-};
-
 export default function Page() {
   return (
     <>

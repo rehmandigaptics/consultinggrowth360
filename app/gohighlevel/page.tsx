@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "GoHighLevel Services — ConsultingGrowth360",
-  description: "GoHighLevel setup and optimization for consultants: pipelines, funnels, calendars, SMS and email follow-up, and a CRM your practice will actually use.",
-};
-
 export default function Page() {
   return (
     <>

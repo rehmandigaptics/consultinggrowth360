@@ -1,11 +1,5 @@
-import type { Metadata } from 'next';
 import Script from 'next/script';
 import { FaqAccordion } from '@/components/FaqAccordion';
-
-export const metadata: Metadata = {
-  title: "Contact — ConsultingGrowth360",
-  description: "Start a growth conversation with ConsultingGrowth360. Tell us about your consulting practice and where you want it to go.",
-};
 
 export default function Page() {
   return (
