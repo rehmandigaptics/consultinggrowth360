@@ -23,3 +23,5 @@ Open [http://localhost:3000](http://localhost:3000).
 - `components/` — shared nav, footer, contact form, GSAP effects, back-to-top
 - `public/assets/` — images from the HTML site
 - `app/site.css` — original site styles (fonts via `next/font`)
+
+<!-- CI/CD verification push test: 2026-10-24 06:15:51 -->
