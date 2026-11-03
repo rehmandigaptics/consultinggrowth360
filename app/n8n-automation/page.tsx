@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> n8n</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> <a href={sitePath("/services")}>Services</a> <span>/</span> n8n</p>
         <div className="eyebrow hero-kicker">05 — Automate</div>
         <h1>
           <span className="line"><span className="line-inner">Workflows that</span></span>
@@ -15,24 +16,24 @@ export default function Page() {
         </h1>
         <p className="hero-desc">n8n automation for consulting practices that need custom connections between forms, CRMs, calendars, Slack, and the tools you already rely on — without another brittle zap that breaks midweek.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Talk about n8n <i className="bi bi-arrow-up-right"></i></a>
-          <a className="btn btn-ghost" href="/gohighlevel">See GoHighLevel</a>
+          <a className="btn" href={sitePath("/contact")}>Talk about n8n <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn btn-ghost" href={sitePath("/gohighlevel")}>See GoHighLevel</a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/crm-automation-services.webp" alt="Server racks and connected infrastructure in soft light" />
+        <img src={sitePath("/assets/images/generated/crm-automation-services.webp")} alt="Server racks and connected infrastructure in soft light" />
       </figure>
     </div>
   </section>
 
   <nav className="service-switch" aria-label="Services">
         <div className="wrap service-switch-inner">
-      <a href="/brand-positioning">Brand</a>
-      <a href="/digital-experience">Digital</a>
-      <a href="/lead-generation">Demand</a>
-      <a href="/crm-automation">CRM</a>
-      <a href="/n8n-automation" aria-current="page">n8n</a>
-      <a href="/gohighlevel">GoHighLevel</a>
+      <a href={sitePath("/brand-positioning")}>Brand</a>
+      <a href={sitePath("/digital-experience")}>Digital</a>
+      <a href={sitePath("/lead-generation")}>Demand</a>
+      <a href={sitePath("/crm-automation")}>CRM</a>
+      <a href={sitePath("/n8n-automation")} aria-current="page">n8n</a>
+      <a href={sitePath("/gohighlevel")}>GoHighLevel</a>
     </div>
   </nav>
 
@@ -69,7 +70,7 @@ export default function Page() {
   <section className="section">
     <div className="wrap media-row">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/crm-automation-services.webp" alt="Dashboards and workflow charts on a monitor" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/crm-automation-services.webp")} alt="Dashboards and workflow charts on a monitor" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>How we build</span>
@@ -100,7 +101,7 @@ export default function Page() {
   </section>
 
   <div className="wrap">
-    <a className="next-link" href="/gohighlevel">
+    <a className="next-link" href={sitePath("/gohighlevel")}>
       <span>Next capability<strong>GoHighLevel</strong></span>
       <i className="bi bi-arrow-up-right" aria-hidden="true"></i>
     </a>
@@ -114,7 +115,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">Bring the tools you use and the steps you repeat. We will show you what n8n should own — and what should stay human.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

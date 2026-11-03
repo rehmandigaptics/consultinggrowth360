@@ -17,6 +17,11 @@ Open [http://localhost:3000](http://localhost:3000).
 - `npm run build` — production build
 - `npm start` — serve the production build
 
+GitHub Pages is deployed from the `main` branch using the GitHub Actions
+workflow in `.github/workflows/pages.yml`. The workflow builds a static export
+with the repository path prefix for
+[consultinggrowth360.github.io](https://rehmandigaptics.github.io/consultinggrowth360/).
+
 ## Structure
 
 - `app/` — routes for home, about, services, approach, industries, contact, and service detail pages

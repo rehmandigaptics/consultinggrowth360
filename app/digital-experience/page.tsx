@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> Digital</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> <a href={sitePath("/services")}>Services</a> <span>/</span> Digital</p>
         <div className="eyebrow hero-kicker">02 — Attract</div>
         <h1>
           <span className="line"><span className="line-inner">A website that</span></span>
@@ -15,23 +16,23 @@ export default function Page() {
         </h1>
         <p className="hero-desc">Premium digital experiences for advisory firms. Less brochure. More of the conversation you wish the right client would begin.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Talk about your site <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn" href={sitePath("/contact")}>Talk about your site <i className="bi bi-arrow-up-right"></i></a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/analytics-growth-services.webp" alt="A laptop open on a clean desk in natural light" />
+        <img src={sitePath("/assets/images/generated/analytics-growth-services.webp")} alt="A laptop open on a clean desk in natural light" />
       </figure>
     </div>
   </section>
 
   <nav className="service-switch" aria-label="Services">
         <div className="wrap service-switch-inner">
-      <a href="/brand-positioning">Brand</a>
-      <a href="/digital-experience" aria-current="page">Digital</a>
-      <a href="/lead-generation">Demand</a>
-      <a href="/crm-automation">CRM</a>
-      <a href="/n8n-automation">n8n</a>
-      <a href="/gohighlevel">GoHighLevel</a>
+      <a href={sitePath("/brand-positioning")}>Brand</a>
+      <a href={sitePath("/digital-experience")} aria-current="page">Digital</a>
+      <a href={sitePath("/lead-generation")}>Demand</a>
+      <a href={sitePath("/crm-automation")}>CRM</a>
+      <a href={sitePath("/n8n-automation")}>n8n</a>
+      <a href={sitePath("/gohighlevel")}>GoHighLevel</a>
     </div>
   </nav>
 
@@ -68,7 +69,7 @@ export default function Page() {
   <section className="section">
     <div className="wrap media-row flip">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/analytics-growth-services.webp" alt="Performance charts reviewed on a laptop" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/analytics-growth-services.webp")} alt="Performance charts reviewed on a laptop" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>What good feels like</span>
@@ -101,7 +102,7 @@ export default function Page() {
   </section>
 
   <div className="wrap">
-    <a className="next-link" href="/lead-generation">
+    <a className="next-link" href={sitePath("/lead-generation")}>
       <span>Next capability<strong>Lead Generation</strong></span>
       <i className="bi bi-arrow-up-right" aria-hidden="true"></i>
     </a>
@@ -115,7 +116,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">If the site looks finished but the inquiries do not match the work you want, the experience is the constraint.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

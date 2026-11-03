@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> Services</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> Services</p>
         <div className="eyebrow hero-kicker">What we do</div>
         <h1>
           <span className="line"><span className="line-inner">Six capabilities.</span></span>
@@ -15,12 +16,12 @@ export default function Page() {
         </h1>
         <p className="hero-desc">Brand, digital experience, demand, CRM, n8n workflows, and GoHighLevel — designed to agree with each other, so the practice feels considered from the first impression to the signed engagement.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Talk through a fit <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn" href={sitePath("/contact")}>Talk through a fit <i className="bi bi-arrow-up-right"></i></a>
           <a className="btn btn-ghost" href="#practice">Browse the practice</a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/premium-boardroom.webp" alt="A calm, minimal office interior with soft daylight" />
+        <img src={sitePath("/assets/images/generated/premium-boardroom.webp")} alt="A calm, minimal office interior with soft daylight" />
       </figure>
     </div>
   </section>
@@ -44,8 +45,8 @@ export default function Page() {
       </div>
 
       <div className="practice-mosaic">
-        <a className="practice-tile is-feature reveal" href="/brand-positioning">
-          <img loading="lazy" src="/assets/images/generated/premium-boardroom.webp" alt="Contemporary executive boardroom" />
+        <a className="practice-tile is-feature reveal" href={sitePath("/brand-positioning")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/premium-boardroom.webp")} alt="Contemporary executive boardroom" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>01 — Position</span>
@@ -54,8 +55,8 @@ export default function Page() {
           </div>
           <span className="practice-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
         </a>
-        <a className="practice-tile reveal" href="/digital-experience">
-          <img loading="lazy" src="/assets/images/generated/analytics-growth-services.webp" alt="Team reviewing digital performance" />
+        <a className="practice-tile reveal" href={sitePath("/digital-experience")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/analytics-growth-services.webp")} alt="Team reviewing digital performance" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>02 — Attract</span>
@@ -63,8 +64,8 @@ export default function Page() {
           </div>
           <span className="practice-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
         </a>
-        <a className="practice-tile reveal" href="/lead-generation">
-          <img loading="lazy" src="/assets/images/generated/contact-consultation.webp" alt="A focused client conversation" />
+        <a className="practice-tile reveal" href={sitePath("/lead-generation")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/contact-consultation.webp")} alt="A focused client conversation" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>03 — Acquire</span>
@@ -72,8 +73,8 @@ export default function Page() {
           </div>
           <span className="practice-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
         </a>
-        <a className="practice-tile is-wide reveal" href="/crm-automation">
-          <img loading="lazy" src="/assets/images/generated/home-hero-premium-meeting.webp" alt="A prepared meeting space for client work" />
+        <a className="practice-tile is-wide reveal" href={sitePath("/crm-automation")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/home-hero-premium-meeting.webp")} alt="A prepared meeting space for client work" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>04 — Scale</span>
@@ -82,8 +83,8 @@ export default function Page() {
           </div>
           <span className="practice-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
         </a>
-        <a className="practice-tile reveal" href="/n8n-automation">
-          <img loading="lazy" src="/assets/images/generated/crm-automation-services.webp" alt="Connected systems and workflows" />
+        <a className="practice-tile reveal" href={sitePath("/n8n-automation")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/crm-automation-services.webp")} alt="Connected systems and workflows" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>05 — Automate</span>
@@ -91,8 +92,8 @@ export default function Page() {
           </div>
           <span className="practice-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
         </a>
-        <a className="practice-tile reveal" href="/gohighlevel">
-          <img loading="lazy" src="/assets/images/generated/about-team-collaboration.webp" alt="Advisors collaborating around a table" />
+        <a className="practice-tile reveal" href={sitePath("/gohighlevel")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/about-team-collaboration.webp")} alt="Advisors collaborating around a table" />
           <div className="practice-shade" aria-hidden="true" />
           <div className="practice-label">
             <span>06 — Operate</span>
@@ -152,7 +153,7 @@ export default function Page() {
   <section className="section">
     <div className="wrap media-row">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/executive-strategy-meeting.webp" alt="A bright, modern studio prepared for a working session" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/executive-strategy-meeting.webp")} alt="A bright, modern studio prepared for a working session" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>Where to begin</span>
@@ -181,7 +182,7 @@ export default function Page() {
           We will help you see whether the constraint is the story, the
           experience, the demand, or the system behind them.
         </p>
-        <a className="btn" href="/contact">
+        <a className="btn" href={sitePath("/contact")}>
           Book a growth conversation <i className="bi bi-arrow-up-right" />
         </a>
       </div>

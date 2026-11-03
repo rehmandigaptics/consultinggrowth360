@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 import Link from "next/link";
 
 export function SiteFooter() {
@@ -92,7 +93,7 @@ export function SiteFooter() {
           >
             Powered by
             <img
-              src="/assets/images/brand/360growthlab.png"
+              src={sitePath("/assets/images/brand/360growthlab.png")}
               alt="360 Growth Lab"
               width={120}
               height={32}

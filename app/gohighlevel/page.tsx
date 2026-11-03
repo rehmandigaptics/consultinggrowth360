@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> GoHighLevel</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> <a href={sitePath("/services")}>Services</a> <span>/</span> GoHighLevel</p>
         <div className="eyebrow hero-kicker">06 — Operate</div>
         <h1>
           <span className="line"><span className="line-inner">GoHighLevel,</span></span>
@@ -15,24 +16,24 @@ export default function Page() {
         </h1>
         <p className="hero-desc">GHL setup, funnels, pipelines, calendars, and follow-up for consultants who want one place to capture demand, run conversations, and keep client work moving.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Talk about GHL <i className="bi bi-arrow-up-right"></i></a>
-          <a className="btn btn-ghost" href="/n8n-automation">See n8n automation</a>
+          <a className="btn" href={sitePath("/contact")}>Talk about GHL <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn btn-ghost" href={sitePath("/n8n-automation")}>See n8n automation</a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/crm-automation-services.webp" alt="A laptop open to a clean workspace for managing client systems" />
+        <img src={sitePath("/assets/images/generated/crm-automation-services.webp")} alt="A laptop open to a clean workspace for managing client systems" />
       </figure>
     </div>
   </section>
 
   <nav className="service-switch" aria-label="Services">
         <div className="wrap service-switch-inner">
-      <a href="/brand-positioning">Brand</a>
-      <a href="/digital-experience">Digital</a>
-      <a href="/lead-generation">Demand</a>
-      <a href="/crm-automation">CRM</a>
-      <a href="/n8n-automation">n8n</a>
-      <a href="/gohighlevel" aria-current="page">GoHighLevel</a>
+      <a href={sitePath("/brand-positioning")}>Brand</a>
+      <a href={sitePath("/digital-experience")}>Digital</a>
+      <a href={sitePath("/lead-generation")}>Demand</a>
+      <a href={sitePath("/crm-automation")}>CRM</a>
+      <a href={sitePath("/n8n-automation")}>n8n</a>
+      <a href={sitePath("/gohighlevel")} aria-current="page">GoHighLevel</a>
     </div>
   </nav>
 
@@ -69,7 +70,7 @@ export default function Page() {
   <section className="section">
     <div className="wrap media-row flip">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/contact-consultation.webp" alt="A smartphone and laptop used for client messaging and follow-up" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/contact-consultation.webp")} alt="A smartphone and laptop used for client messaging and follow-up" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>What good looks like</span>
@@ -100,7 +101,7 @@ export default function Page() {
   </section>
 
   <div className="wrap">
-    <a className="next-link" href="/brand-positioning">
+    <a className="next-link" href={sitePath("/brand-positioning")}>
       <span>Back to the start<strong>Brand &amp; Positioning</strong></span>
       <i className="bi bi-arrow-up-right" aria-hidden="true"></i>
     </a>
@@ -114,7 +115,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">Tell us what you already have in the account and what still lives in inboxes. We will build the version your practice can run.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

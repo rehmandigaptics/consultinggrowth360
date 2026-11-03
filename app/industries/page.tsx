@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> Who we help</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> Who we help</p>
         <div className="eyebrow hero-kicker">Practices we partner with</div>
         <h1>
           <span className="line"><span className="line-inner">Your field is specific.</span></span>
@@ -16,7 +17,7 @@ export default function Page() {
         <p className="hero-desc">We work with independent consultants and advisory firms across the United States. The method stays constant. The language, the proof, and the pipeline change with the work.</p>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/premium-boardroom.webp" alt="A quiet, well-appointed conference room" />
+        <img src={sitePath("/assets/images/generated/premium-boardroom.webp")} alt="A quiet, well-appointed conference room" />
       </figure>
     </div>
   </section>
@@ -33,7 +34,7 @@ export default function Page() {
 
       <article className="ind-block reveal" id="business">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/premium-boardroom.webp" alt="A contemporary executive boardroom" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/premium-boardroom.webp")} alt="A contemporary executive boardroom" />
         </figure>
         <div>
           <div className="ind-kicker">01 — Business &amp; management</div>
@@ -49,7 +50,7 @@ export default function Page() {
 
       <article className="ind-block flip reveal" id="marketing">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/executive-strategy-meeting.webp" alt="A founder reviewing plans in a bright workspace" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/executive-strategy-meeting.webp")} alt="A founder reviewing plans in a bright workspace" />
         </figure>
         <div>
           <div className="ind-kicker">02 — Marketing &amp; growth</div>
@@ -65,7 +66,7 @@ export default function Page() {
 
       <article className="ind-block reveal" id="healthcare">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/healthcare-consulting.webp" alt="A clinician reviewing information on a tablet" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/healthcare-consulting.webp")} alt="A clinician reviewing information on a tablet" />
         </figure>
         <div>
           <div className="ind-kicker">03 — Healthcare &amp; wellness</div>
@@ -81,7 +82,7 @@ export default function Page() {
 
       <article className="ind-block flip reveal" id="finance">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/financial-consulting.webp" alt="Advisory documents and a pen on a wooden desk" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/financial-consulting.webp")} alt="Advisory documents and a pen on a wooden desk" />
         </figure>
         <div>
           <div className="ind-kicker">04 — Finance &amp; advisory</div>
@@ -97,7 +98,7 @@ export default function Page() {
 
       <article className="ind-block reveal" id="technology">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/analytics-growth-services.webp" alt="A technology team collaborating on laptops" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/analytics-growth-services.webp")} alt="A technology team collaborating on laptops" />
         </figure>
         <div>
           <div className="ind-kicker">05 — Technology &amp; IT</div>
@@ -113,7 +114,7 @@ export default function Page() {
 
       <article className="ind-block flip reveal" id="education">
         <figure className="media-frame">
-          <img loading="lazy" src="/assets/images/generated/workshop-coaching.webp" alt="A coaching group collaborating around a table" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/workshop-coaching.webp")} alt="A coaching group collaborating around a table" />
         </figure>
         <div>
           <div className="ind-kicker">06 — Education &amp; coaching</div>
@@ -137,7 +138,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">Industry context shapes the words, the site, and the pipeline. It does not replace a clear point of view.</p>
-        <a className="btn" href="/services">See the capabilities <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/services")}>See the capabilities <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

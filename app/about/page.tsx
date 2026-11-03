@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> About</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> About</p>
         <div className="eyebrow hero-kicker">Who we are</div>
         <h1>
           <span className="line"><span className="line-inner">The business behind</span></span>
@@ -15,12 +16,12 @@ export default function Page() {
         </h1>
         <p className="hero-desc">We help independent consultants and advisory firms become easier to understand, easier to choose, and easier to run.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Start a conversation <i className="bi bi-arrow-up-right"></i></a>
-          <a className="btn btn-ghost" href="/approach">See the method</a>
+          <a className="btn" href={sitePath("/contact")}>Start a conversation <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn btn-ghost" href={sitePath("/approach")}>See the method</a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/executive-strategy-meeting.webp" alt="A client presentation in a glass-walled meeting room" />
+        <img src={sitePath("/assets/images/generated/executive-strategy-meeting.webp")} alt="A client presentation in a glass-walled meeting room" />
       </figure>
     </div>
   </section>
@@ -55,14 +56,14 @@ export default function Page() {
         <figure className="about-main">
           <img
             loading="lazy"
-            src="/assets/images/generated/about-team-collaboration.webp"
+            src={sitePath("/assets/images/generated/about-team-collaboration.webp")}
             alt="Four colleagues in conversation in a bright office"
           />
         </figure>
         <figure className="about-side">
           <img
             loading="lazy"
-            src="/assets/images/generated/contact-consultation.webp"
+            src={sitePath("/assets/images/generated/contact-consultation.webp")}
             alt="A team in discussion around a conference table"
           />
         </figure>
@@ -158,7 +159,7 @@ export default function Page() {
         </li>
       </ol>
       <p className="model360-note">
-        <a href="/services">
+        <a href={sitePath("/services")}>
           Explore all six capabilities <i className="bi bi-arrow-up-right" />
         </a>
       </p>
@@ -186,7 +187,7 @@ export default function Page() {
       <figure className="philosophy-photo reveal">
         <img
           loading="lazy"
-          src="/assets/images/generated/about-team-collaboration.webp"
+          src={sitePath("/assets/images/generated/about-team-collaboration.webp")}
           alt="A small team gathered around a meeting table"
         />
         <figcaption className="philosophy-caption">
@@ -204,7 +205,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">Tell us where the practice is strong and where growth feels fragile. We will meet you there.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> <a href="/services">Services</a> <span>/</span> Demand</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> <a href={sitePath("/services")}>Services</a> <span>/</span> Demand</p>
         <div className="eyebrow hero-kicker">03 — Acquire</div>
         <h1>
           <span className="line"><span className="line-inner">Demand that</span></span>
@@ -15,23 +16,23 @@ export default function Page() {
         </h1>
         <p className="hero-desc">Lead generation for consultants who are done with feast-or-famine pipelines and inquiries that were never a fit.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Talk about demand <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn" href={sitePath("/contact")}>Talk about demand <i className="bi bi-arrow-up-right"></i></a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/about-team-collaboration.webp" alt="A collaborative team leaning in around a laptop" />
+        <img src={sitePath("/assets/images/generated/about-team-collaboration.webp")} alt="A collaborative team leaning in around a laptop" />
       </figure>
     </div>
   </section>
 
   <nav className="service-switch" aria-label="Services">
         <div className="wrap service-switch-inner">
-      <a href="/brand-positioning">Brand</a>
-      <a href="/digital-experience">Digital</a>
-      <a href="/lead-generation" aria-current="page">Demand</a>
-      <a href="/crm-automation">CRM</a>
-      <a href="/n8n-automation">n8n</a>
-      <a href="/gohighlevel">GoHighLevel</a>
+      <a href={sitePath("/brand-positioning")}>Brand</a>
+      <a href={sitePath("/digital-experience")}>Digital</a>
+      <a href={sitePath("/lead-generation")} aria-current="page">Demand</a>
+      <a href={sitePath("/crm-automation")}>CRM</a>
+      <a href={sitePath("/n8n-automation")}>n8n</a>
+      <a href={sitePath("/gohighlevel")}>GoHighLevel</a>
     </div>
   </nav>
 
@@ -82,7 +83,7 @@ export default function Page() {
   <section className="section band-paper">
     <div className="wrap media-row">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/contact-consultation.webp" alt="Two professionals in a focused meeting" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/contact-consultation.webp")} alt="Two professionals in a focused meeting" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>What we protect</span>
@@ -115,7 +116,7 @@ export default function Page() {
   </section>
 
   <div className="wrap">
-    <a className="next-link" href="/crm-automation">
+    <a className="next-link" href={sitePath("/crm-automation")}>
       <span>Next capability<strong>CRM &amp; Automation</strong></span>
       <i className="bi bi-arrow-up-right" aria-hidden="true"></i>
     </a>
@@ -129,7 +130,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">If the practice is waiting on referrals, or busy with conversations that go nowhere, demand is the constraint.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

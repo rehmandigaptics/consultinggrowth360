@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 import Script from 'next/script';
 
 export default function Page() {
@@ -17,13 +18,13 @@ export default function Page() {
         </h1>
         <p className="hero-desc">Turn your consulting expertise into a business that stands out, attracts the right clients, and scales with purpose.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Book a Growth Consultation <i className="bi bi-arrow-up-right"></i></a>
-          <a className="text-link" href="/services">Explore what we do</a>
+          <a className="btn" href={sitePath("/contact")}>Book a Growth Consultation <i className="bi bi-arrow-up-right"></i></a>
+          <a className="text-link" href={sitePath("/services")}>Explore what we do</a>
         </div>
       </div>
       <div className="hero-visual">
         <div className="hero-frame">
-          <img src="/assets/images/generated/home-hero-premium-meeting.webp" alt="Sunlit modern office prepared for a client meeting" fetchPriority="high" />
+          <img src={sitePath("/assets/images/generated/home-hero-premium-meeting.webp")} alt="Sunlit modern office prepared for a client meeting" fetchPriority="high" />
         </div>
         <div className="hero-chip">United States · Advisory practices</div>
         <aside className="float-card">
@@ -69,10 +70,10 @@ export default function Page() {
     <div className="wrap about-grid">
       <div className="about-media reveal">
         <figure className="about-main">
-          <img loading="lazy" src="/assets/images/generated/about-team-collaboration.webp" alt="Professionals collaborating around a table" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/about-team-collaboration.webp")} alt="Professionals collaborating around a table" />
         </figure>
         <figure className="about-side">
-          <img loading="lazy" src="/assets/images/generated/executive-strategy-meeting.webp" alt="Advisors in a working session" />
+          <img loading="lazy" src={sitePath("/assets/images/generated/executive-strategy-meeting.webp")} alt="Advisors in a working session" />
         </figure>
         <div className="about-badge">
           <strong>360°</strong>
@@ -90,7 +91,7 @@ export default function Page() {
           <li><i className="bi bi-check-circle-fill"></i> Connected growth systems</li>
           <li><i className="bi bi-check-circle-fill"></i> Sustainable execution</li>
         </ul>
-        <a className="btn btn-dark" href="/about">Read our story <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn btn-dark" href={sitePath("/about")}>Read our story <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>
@@ -108,7 +109,7 @@ export default function Page() {
         </p>
       </div>
       <div className="svc-grid">
-        <a className="svc reveal" href="/brand-positioning">
+        <a className="svc reveal" href={sitePath("/brand-positioning")}>
           <div className="svc-top">
             <span className="svc-tag">Position</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -119,7 +120,7 @@ export default function Page() {
             <p>Shape a confident, distinct market presence that communicates your value and wins trust.</p>
           </div>
         </a>
-        <a className="svc reveal" href="/digital-experience">
+        <a className="svc reveal" href={sitePath("/digital-experience")}>
           <div className="svc-top">
             <span className="svc-tag">Attract</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -130,7 +131,7 @@ export default function Page() {
             <p>Premium, conversion-minded websites that turn the right attention into real conversations.</p>
           </div>
         </a>
-        <a className="svc reveal" href="/lead-generation">
+        <a className="svc reveal" href={sitePath("/lead-generation")}>
           <div className="svc-top">
             <span className="svc-tag">Acquire</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -141,7 +142,7 @@ export default function Page() {
             <p>Create consistent demand through smart campaigns, compelling content, and clear funnels.</p>
           </div>
         </a>
-        <a className="svc reveal" href="/crm-automation">
+        <a className="svc reveal" href={sitePath("/crm-automation")}>
           <div className="svc-top">
             <span className="svc-tag">Scale</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -152,7 +153,7 @@ export default function Page() {
             <p>Reduce manual work with streamlined follow-ups, organized pipelines, and connected tools.</p>
           </div>
         </a>
-        <a className="svc reveal" href="/n8n-automation">
+        <a className="svc reveal" href={sitePath("/n8n-automation")}>
           <div className="svc-top">
             <span className="svc-tag">Automate</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -163,7 +164,7 @@ export default function Page() {
             <p>Custom workflows that connect your forms, CRM, calendars, and tools — without brittle manual work.</p>
           </div>
         </a>
-        <a className="svc reveal" href="/gohighlevel">
+        <a className="svc reveal" href={sitePath("/gohighlevel")}>
           <div className="svc-top">
             <span className="svc-tag">Operate</span>
             <span className="svc-go" aria-hidden="true"><i className="bi bi-arrow-up-right" /></span>
@@ -177,7 +178,7 @@ export default function Page() {
       </div>
       <p className="services-note copy">
         Six capabilities, one system.{" "}
-        <a href="/services">
+        <a href={sitePath("/services")}>
           See how they connect <i className="bi bi-arrow-up-right" />
         </a>
       </p>
@@ -229,7 +230,7 @@ export default function Page() {
       </ol>
 
       <p className="method-cta reveal">
-        <a className="text-link" href="/approach">
+        <a className="text-link" href={sitePath("/approach")}>
           Explore the full method <i className="bi bi-arrow-up-right" />
         </a>
       </p>
@@ -249,8 +250,8 @@ export default function Page() {
         </p>
       </div>
       <div className="sector-grid">
-        <a className="sector reveal" href="/industries#business">
-          <img loading="lazy" src="/assets/images/generated/premium-boardroom.webp" alt="Contemporary executive boardroom" />
+        <a className="sector reveal" href={sitePath("/industries#business")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/premium-boardroom.webp")} alt="Contemporary executive boardroom" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">01</span>
@@ -259,8 +260,8 @@ export default function Page() {
             <p>Sharper positioning for firms that advise on how organizations run.</p>
           </div>
         </a>
-        <a className="sector reveal" href="/industries#marketing">
-          <img loading="lazy" src="/assets/images/generated/about-team-collaboration.webp" alt="Consultants working together" />
+        <a className="sector reveal" href={sitePath("/industries#marketing")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/about-team-collaboration.webp")} alt="Consultants working together" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">02</span>
@@ -269,8 +270,8 @@ export default function Page() {
             <p>A practice that markets itself with the same intention it sells.</p>
           </div>
         </a>
-        <a className="sector reveal" href="/industries#healthcare">
-          <img loading="lazy" src="/assets/images/generated/healthcare-consulting.webp" alt="Healthcare professional at work" />
+        <a className="sector reveal" href={sitePath("/industries#healthcare")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/healthcare-consulting.webp")} alt="Healthcare professional at work" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">03</span>
@@ -279,8 +280,8 @@ export default function Page() {
             <p>A trust-first presence for specialist advisors.</p>
           </div>
         </a>
-        <a className="sector reveal" href="/industries#finance">
-          <img loading="lazy" src="/assets/images/generated/financial-consulting.webp" alt="Financial documents on a desk" />
+        <a className="sector reveal" href={sitePath("/industries#finance")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/financial-consulting.webp")} alt="Financial documents on a desk" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">04</span>
@@ -289,8 +290,8 @@ export default function Page() {
             <p>Clarity that earns the next serious conversation.</p>
           </div>
         </a>
-        <a className="sector reveal" href="/industries#technology">
-          <img loading="lazy" src="/assets/images/generated/analytics-growth-services.webp" alt="Team planning a technology project" />
+        <a className="sector reveal" href={sitePath("/industries#technology")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/analytics-growth-services.webp")} alt="Team planning a technology project" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">05</span>
@@ -299,8 +300,8 @@ export default function Page() {
             <p>A digital experience as precise as the work itself.</p>
           </div>
         </a>
-        <a className="sector reveal" href="/industries#education">
-          <img loading="lazy" src="/assets/images/generated/workshop-coaching.webp" alt="Education specialists collaborating" />
+        <a className="sector reveal" href={sitePath("/industries#education")}>
+          <img loading="lazy" src={sitePath("/assets/images/generated/workshop-coaching.webp")} alt="Education specialists collaborating" />
           <div className="sector-shade" aria-hidden="true" />
           <div className="sector-body">
             <span className="sector-num">06</span>
@@ -312,7 +313,7 @@ export default function Page() {
       </div>
       <p className="sectors-note copy">
         Don&apos;t see your specialty?{" "}
-        <a href="/contact">
+        <a href={sitePath("/contact")}>
           Let&apos;s discuss your goals <i className="bi bi-arrow-up-right" />
         </a>
       </p>
@@ -341,7 +342,7 @@ export default function Page() {
       <figure className="philosophy-photo reveal">
         <img
           loading="lazy"
-          src="/assets/images/generated/contact-consultation.webp"
+          src={sitePath("/assets/images/generated/contact-consultation.webp")}
           alt="Advisors gathered around a conference table"
         />
         <figcaption className="philosophy-caption">

@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 export default function Page() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> Approach</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> Approach</p>
         <div className="eyebrow hero-kicker">The method</div>
         <h1>
           <span className="line"><span className="line-inner">From potential</span></span>
@@ -15,12 +16,12 @@ export default function Page() {
         </h1>
         <p className="hero-desc">Discover what is true, design a roadmap, activate the work that matters first, then refine from evidence rather than opinion.</p>
         <div className="hero-actions">
-          <a className="btn" href="/contact">Plan a first conversation <i className="bi bi-arrow-up-right"></i></a>
+          <a className="btn" href={sitePath("/contact")}>Plan a first conversation <i className="bi bi-arrow-up-right"></i></a>
           <a className="btn btn-ghost" href="#steps">Read the four steps</a>
         </div>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/workshop-coaching.webp" alt="A workshop table covered with notes and laptops" />
+        <img src={sitePath("/assets/images/generated/workshop-coaching.webp")} alt="A workshop table covered with notes and laptops" />
       </figure>
     </div>
   </section>
@@ -158,7 +159,7 @@ export default function Page() {
   <section className="section">
     <div className="wrap media-row flip">
       <figure className="media-frame reveal">
-        <img loading="lazy" src="/assets/images/generated/workshop-coaching.webp" alt="Professionals in a working session around a long table" />
+        <img loading="lazy" src={sitePath("/assets/images/generated/workshop-coaching.webp")} alt="Professionals in a working session around a long table" />
       </figure>
       <div className="reveal">
         <span className="eyebrow" style={{ color: "var(--moss)" }}>The first conversation</span>
@@ -181,7 +182,7 @@ export default function Page() {
       </div>
       <div>
         <p className="copy">A first conversation is a working session, not a pitch deck. Come with the questions you have been carrying.</p>
-        <a className="btn" href="/contact">Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
+        <a className="btn" href={sitePath("/contact")}>Book a growth conversation <i className="bi bi-arrow-up-right"></i></a>
       </div>
     </div>
   </section>

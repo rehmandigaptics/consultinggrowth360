@@ -1,3 +1,4 @@
+import { sitePath } from "@/lib/site-path";
 import Script from 'next/script';
 import { FaqAccordion } from '@/components/FaqAccordion';
 
@@ -10,7 +11,7 @@ export default function Page() {
     <div className="hero-gridlines" aria-hidden="true"></div>
     <div className="wrap-wide page-hero-grid">
       <div className="page-hero-copy">
-        <p className="crumbs"><a href="/">Home</a> <span>/</span> Contact</p>
+        <p className="crumbs"><a href={sitePath("/")}>Home</a> <span>/</span> Contact</p>
         <div className="eyebrow hero-kicker">A first conversation</div>
         <h1>
           <span className="line"><span className="line-inner">Let’s talk about</span></span>
@@ -19,7 +20,7 @@ export default function Page() {
         <p className="hero-desc">Tell us where you are, where growth feels fragile, and what a better year would actually look like. We work with consultants across the United States.</p>
       </div>
       <figure className="page-hero-media">
-        <img src="/assets/images/generated/contact-consultation.webp" alt="Two people in a focused working conversation" />
+        <img src={sitePath("/assets/images/generated/contact-consultation.webp")} alt="Two people in a focused working conversation" />
       </figure>
     </div>
   </section>
